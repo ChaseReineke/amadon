@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amadon Checkout</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style2.css' %}">
+</head>
+
+<body>
+    <div id="container">
+        <h3>Thank you for your business!</h3>
+        <p>You have purchased {{request.session.quantity}} {{request.session.item}}(s)!</p>
+        <p>We have charged your credit card for ${{request.session.charge}}.</p>
+        <p>You have ordered {{request.session.total_items}} total items, and have spent a total of ${{request.session.total_charge}}.</p>
+
+        <form action='/clear' method='post' id="button">
+            {% csrf_token %}
+            <input type='submit' value='empty cart'>
+        </form>
+
+        <p><a href="/">Go Back</a></p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: aquamarine;
+    color: darkcyan;
+    border: 1px solid black;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    border: 1px solid black;
+}
+
+table tr th {
+    font-size: 22px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 45px;
+}
+
+table tr td {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blue;
+    padding-left: 45px;
+}
+
+.form_rows {
+    margin: 10px;
+}
